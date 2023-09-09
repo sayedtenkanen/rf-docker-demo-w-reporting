@@ -35,7 +35,8 @@ jobs:
     - name: Show current directory
       run: |
         pwd
-        ls .
+        ls ./reports
+        
     - name: Output report
       uses: joonvena/robotframework-reporter-action@v2.3
       with:
