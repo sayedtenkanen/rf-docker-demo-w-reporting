@@ -36,6 +36,6 @@ jobs:
       run: |
         ls ./reports
     - name: Output report
-      uses: joonvena/robotframework-reporter-action@v2.3
+      uses: joonvena/robotframework-reporter-action@v2
       with:
         gh_access_token: ${{ secrets.GITHUB_TOKEN }}
