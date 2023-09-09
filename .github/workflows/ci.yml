@@ -28,15 +28,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Download test report
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v2.1.1
       with:
         name: reports
         path: ./reports
-    - name: Show current directory
+    - name: Show reports directory content
       run: |
-        pwd
         ls ./reports
-        
     - name: Output report
       uses: joonvena/robotframework-reporter-action@v2.3
       with:
